@@ -11,8 +11,10 @@ Group:		Libraries
 Source0:	https://github.com/cpp-netlib/cpp-netlib/archive/%{name}-%{version}-final.tar.gz
 # Source0-md5:	72f3653254935038876b867417de8c74
 URL:		http://cpp-netlib.org/
+BuildRequires:	boost-devel
 BuildRequires:	cmake
 BuildRequires:	libstdc++-devel
+BuildRequires:	openssl-devel
 BuildRequires:	rpmbuild(macros) >= 1.583
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
